@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .section{
+                padding: 30px;
+                /* border: 1px solid black; */
+                width: 40%;
+                margin: auto;
+                margin-top: 50px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px 0px rgba(105, 104, 104, 0.8);
+            }
+            h2{
+                text-transform: capitalize;
+            }
+            .btn{
+                margin-top: 40px;
+                text-align: center;
+            }
+            button{
+                padding: 10px 30px;
+                border: none;
+                outline: none;
+                border: 1px solid blue;
+                text-transform: capitalize;
+                margin-left: 40px;
+                border-radius: 5px;
+                color: orangered;
+            }
+            h1{
+                text-align: center;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rock Paper Scissor Game</h1>
+       <div class="section">
+        <h2 id="cs">Computer choice : </h2>
+        <h2 id="ys">your choice : </h2>
+        <h2 id="r">result : </h2>
+      <div class="btn">
+        <button id="rock">rock</button>
+        <button id="scissor">scissor</button>
+        <button id="paper">paper</button>
+    
+      </div>
+         
+       </div>
+       
+           
+        
+      
+        
+        <script>
+           
+        
+            const computer_choice_d=document.getElementById("cs");
+            const your_choice_d=document.getElementById("ys");
+            const result_d=document.getElementById("r");
+            const possible_choice=document.querySelectorAll("button");
+            let userchoice;
+            let compchoice;
+            let result;
+         possible_choice.forEach(possible_choice=>possible_choice.addEventListener('click',(e)=>{
+             userchoice=e.target.id;
+             your_choice_d.innerHTML=userchoice;
+             genratecomchoice();
+             getresult();
+         }))
+    function  genratecomchoice()
+    {
+       const randomnumber=Math.floor(Math.random()*3)+1;// or we can use possible_choices.lenghth
+       console.log(randomnumber);
+       if(randomnumber===1)
+       {
+        compchoice='rock';
+       }
+       if(randomnumber===2)
+       {
+        compchoice='scissor';
+       }
+       if(randomnumber===3)
+       {
+        compchoice='paper';
+       }
+       computer_choice_d.innerHTML=compchoice;
+       
+
+    }
+    function getresult()
+    {
+        if(compchoice===userchoice)
+        {
+            result='its a draw';
+        }
+        if(compchoice==='rock'&& userchoice==='paper')
+        {
+            result='you lost';
+        }
+        if(compchoice==='paper' && userchoice==='rock')
+        {
+            result='you won';
+        }
+        if(compchoice==='scissor' && userchoice==='paper')
+        {
+            result='you lost';
+        }
+        if(compchoice==='paper' && userchoice==='scissor')
+        {
+            result='you won';
+        }
+        if(compchoice==='rock' && userchoice==='scissor')
+        {
+            result='you lost';
+        }
+        if(compchoice==='scissor' && userchoice==='rock')
+        {
+            result='you won';
+        }
+        r.innerHTML=result;
+    }
+        
+         </script>
+    </body>
+</html>
