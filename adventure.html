@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure-travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: static;
+
+        }
+
+        nav ul {
+            display: flex;
+            margin-right: 200px;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 2px;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 12px;
+
+        }
+
+        nav ul li a:hover {
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+
+        nav h2 {
+            margin-left: 200px;
+            color: #fff;
+        }
+
+        .container {
+            height: 90%;
+            width: 100%;
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        .container img {
+            width: 100%;
+           
+        }
+
+
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
+            margin-top: 15%;
+
+
+
+        }
+
+        .content p {
+            margin: 20px 0;
+            color: #fff;
+
+        }
+
+        .content h4 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fff;
+
+        }
+
+        .content h1 {
+            text-transform: uppercase;
+            color: #fff;
+            z-index: 9;
+
+        }
+
+        .btn {
+            border: none;
+            background: #fff;
+            color: black;
+            text-transform: uppercase;
+            border-radius: 12px;
+            padding: 12px 0;
+            /* margin-bottom: 20px; */
+            width: 10%;
+            text-align: center;
+            margin-left: 45%;
+            margin-bottom: 20%;
+
+        }
+
+        .btn:hover {
+            background: #ccc;
+            cursor: pointer;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .heading h2 {
+            margin-bottom: 10px;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        .cards {
+            height: 90%;
+            margin-left: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+        }
+
+        .cards .boxes img {
+            width: 300px;
+            height: 290px;
+            overflow: hidden;
+        }
+        .cards .boxes img:hover {
+              border: 2px solid #ccc;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1em;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+        }
+
+        .xbox {
+            height: 350px;
+            width: 100%;
+            background-image: url("https://wallpapercave.com/wp/PJXlT3m.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .content-2 {
+            width: 60%;
+
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 0 0 100px;
+        }
+
+        .content-2 h2,
+        .content-2 p {
+            padding: 12px 0;
+
+        }
+
+        .content-2 h2 {
+            text-transform: uppercase;
+        }
+
+        .content-2 .btn {
+            padding: 12px 0;
+            margin-right: 40%;
+            margin-top: 20px;
+            width: 40%;
+            text-transform: uppercase;
+            border-radius: 0%;
+            background-color: white;
+            color: black;
+        }
+        .content-2 .btn:hover {
+             background-color: #ccc;
+        }
+
+        footer {
+
+            height: 250px;
+            padding-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: #ccc;
+            color: #000;
+        }
+
+        footer ul {
+            text-align: center;
+        }
+
+        footer li {
+            list-style: none;
+        }
+
+        footer a {
+            line-height: 1.8;
+            font-size: 13px;
+            text-decoration: none;
+            color: #000;
+        }
+        footer a:hover {
+            border-bottom: 2px solid black;
+        }
+
+        footer ul h2 {
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        footer p{
+            align-items: center;
+           width: 100%;
+           margin-left: 195%;
+           margin-top: 10%;
+        }
+        @media (max-width:700px){
+            .cards{
+                grid-template-columns: repeat(2,1fr);
+            }
+            footer{
+                grid-template-columns: repeat(2,1fr);
+                overflow: hidden;
+            }
+        }
+        @media(max-width:500px){
+            .cards{
+                grid-template-columns: 1fr;
+            }
+            footer{
+                grid-template-columns: 1fr;
+                overflow: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h2>Adventures</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Pages</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <h4>discover the colorful world</h4>
+                <h1>new experience</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere error nobis dicta. Itaque, quia
+                    possimus! Veniam culpa ullam unde quos!</p>
+                <button class="btn">discover now</button>
+            </div>
+        </header>
+    </div>
+    <section class="showcase">
+        <div class="heading">
+            <h2>tours</h2>
+            <p>travel package of every budget.which one is your's?</p>
+        </div>
+        <section class="cards">
+            <div class="boxes">
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/03/1c/9c.jpg" width="301px"
+                    alt="">
+                <p>europe</p>
+            </div>
+            <div class="boxes">
+                <img src="https://www.bustronome.com/wp-content/uploads/2017/09/IMG_8376.jpg" width="330px" alt="">
+                <p>eastern india tour</p>
+            </div>
+            <div class="boxes">
+                <img src="http://static.independent.co.uk/s3fs-public/thumbnails/image/2015/01/15/12/mumbai_afp.jpg"
+                    width="200px" alt="">
+                <p>eastern india tour</p>
+            </div>
+            <div class="boxes">
+                <img src="http://1.bp.blogspot.com/-jNS73HlezOQ/Ub7FS-pM1kI/AAAAAAAAOEM/mGhDfFLHTco/s1600/parliament_house.jpg"
+                    width="302px" alt="">
+                <p>eastern india tour</p>
+            </div>
+        </section>
+        <section class="xbox">
+            <div class="content-2">
+                <h2>The best world tour experience you ever crave</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam minima modi quia? Nemo, incidunt
+                    repudiandae.</p>
+                <button class="btn">sign up</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <h2>legal</h2>
+                </li>
+                <li><a href="">terms of use</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">book a trip</a></li>
+                <li><a href="">buy a map</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>our sites</h2>
+                </li>
+                <li><a href="">terms of use</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">book a trip</a></li>
+                <li><a href="">buy a map</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>join us</h2>
+                </li>
+                <li><a href="">terms of use</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">book a trip</a></li>
+                <li><a href="">buy a map</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>contact</h2>
+                </li>
+                <li><a href="">terms of use</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">book a trip</a></li>
+                <li><a href="">buy a map</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>social links</h2>
+                </li>
+                <li><a href=""><i class='fa fa-facebook-official' style='color: blue'></i></a></li>
+                <li> <a href=""><i class='fa fa-twitter-square' style='color: blue'></i></a></li>
+                <li> <a href=""><i class='fa fa-linkedin-square' style='color: blue'></i></a></li>
+            </ul>
+            <p>&copy;copyright adventure-travel 2020</p>
+        </footer>
+
+</body>
+
+</html>
