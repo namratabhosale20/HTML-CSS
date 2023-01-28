@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .header {
+            height: 70px;
+            background-color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            align-self: center;
+            margin-top: 20px;
+            margin-right: 20px;
+
+        }
+
+        nav ul li a {
+            margin-right: 2em;
+            text-transform: capitalize;
+            transition: all 0.3s ease-in;
+        }
+
+        nav ul li a:hover {
+            background-color: red;
+            padding: 5px;
+            color: white;
+        }
+
+        nav h1 {
+            text-transform: capitalize;
+            margin-top: 20px;
+            margin-left: 30px;
+
+        }
+
+        .main {
+            height: 90vh;
+            width: 100%;
+            background-image: url("https://fthmb.tqn.com/GKyG-p3qSCWFgl9d-YBF6sLRIrY=/5760x3840/filters:fill(auto,1)/GettyImages-559699279-58f4f3cb5f9b582c4dfb1b29.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+
+
+
+
+        }
+
+        .main .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 12em;
+
+
+        }
+
+        .info form {
+            width: 50%;
+            display: flex;
+            flex-basis: 80;
+            margin-top: 2em;
+
+        }
+
+        .info input {
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-transform: capitalize;
+            border-radius: 2px;
+
+        }
+
+        .info button {
+            width: 50%;
+            border: none;
+            background-color: rgb(81, 212, 69);
+            color: white;
+            text-transform: capitalize;
+            transition: all 0.3s ease-in;
+            border-radius: 2px;
+
+        }
+
+        .info button:hover {
+            background-color: rgb(40, 133, 40);
+        }
+
+        .info .one {
+            border-left: 1px solid black;
+        }
+
+        .info h1 {
+            text-transform: capitalize;
+        }
+
+        .info2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+            color: white;
+            font-size: 30px;
+            line-height: 1.3;
+        }
+
+        .info2 h2 {
+            color: yellow;
+            text-transform: capitalize;
+        }
+
+        .wrapper {
+            /* height: 60vh; */
+
+            /* margin: 50px 50px; */
+        }
+
+        .cards {
+
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-gap: 2em;
+            margin-top: 4em;
+            justify-content: center;
+        }
+
+        .card {
+            text-align: center;
+            padding: 1em;
+
+            border-radius: 6px;
+            box-shadow: 0px 4px 8px 0px #8888;
+
+        }
+
+        .card img:hover {
+            opacity: 0.3;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card button {
+            width: 50%;
+            padding: 9px;
+            margin-top: 1em;
+            text-transform: capitalize;
+            border: none;
+            background-color: navy;
+            color: white;
+            border-radius: 5px;
+            transition: all 0, 5s ease-in;
+        }
+
+        .card button:hover {
+            background-color: rgb(93, 93, 236);
+        }
+
+        .home {
+            color: red;
+        }
+
+        .wrapper h1 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .card h1 {
+            margin-bottom: 9px;
+            margin-top: 5px;
+        }
+
+        .content {
+            height: 70vh;
+            margin-top: 5em;
+        }
+
+        .content .con .img {
+            width: 50%;
+        }
+
+        .content .con .img img {
+            width: 100%;
+        }
+
+        .content .con {
+            display: flex;
+        }
+
+        .content .service {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-top: 1px solid ghostwhite;
+            align-content: center;
+        }
+
+        .service .tip {
+            /* border: 1px solid black; */
+            margin-bottom: 12px;
+            margin-right: 12px;
+            margin-left: 12px;
+            padding: 9px;
+            text-align: center;
+            position: relative;
+        }
+
+        .tip h2 {
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            color: red;
+        }
+        .tip h2:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        .content .h h2 {
+            margin-left: 150px;
+            margin-top: 30px;
+            position: absolute;
+            font-size: 26px;
+            text-transform: capitalize;
+
+
+        }
+
+        .content .h span {
+            padding-bottom: 12px;
+            margin-bottom: 5px;
+            border-bottom: 5px solid black;
+        }
+
+        .con .img img {
+            border-radius: 3px;
+        }
+
+        .offer {
+            height: 20%;
+            width: 100%;
+            border: 1px solid black;
+            background-color: navy;
+        }
+
+        .offer .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .offer .info .btn {
+            margin-left: 20px;
+        }
+
+        .btn button {
+            text-transform: capitalize;
+            width: 150%;
+            padding: 12px;
+            background-color: rgb(35, 204, 204);
+        }
+
+        
+
+        .card1 {
+
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            justify-content: center;
+            grid-gap: 2em;
+        }
+
+        .cards1 img {
+            width: 100%;
+           border-top-left-radius: 5px;
+           border-top-right-radius: 5px;
+           margin-bottom: 1em;
+        }
+        .cards1{
+            margin-top: 2em;
+            box-shadow: 0px 4px 8px 0px #8888;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+        .cards1 button{
+            margin-top: 12px;
+            padding: 9px;
+            border: none;
+          border-radius: 2px;
+          background-color: orange;
+          color: white;
+          text-transform: capitalize;
+          margin-bottom: 6px;
+        }
+        .cards1 button:hover{
+          opacity: 0.3;
+        }
+        footer{
+            height: 50vh;
+            background-image: url("https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/04/18/105140657-GettyImages-817362204.1910x1000.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 5em;
+        }
+        .end{
+            text-align: center;
+           padding-top: 10%;
+        }
+        .end h1{
+            text-transform: capitalize;
+            margin-bottom: 0.5em;
+            color: white;
+        }
+        .end button{
+            width: 10%;
+            padding: 12px;
+            border: none;
+            text-transform: uppercase;
+            background-color: orangered;
+            border-radius: 3px;
+            color: white;
+            transition: all 0.5s ease-in;
+        }
+        .end button:hover{
+         opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <h1>travelers</h1>
+            <ul>
+                <li><a class="home" href="">home</a></li>
+                <li><a href="">destination</a></li>
+                <li><a href="">discount</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="info">
+            <h1>make now your time ti live the good life---seats fill fast!</h1>
+            <form action="">
+                <input type="text" placeholder="where?">
+                <input class="one" type="text" placeholder="what month?">
+                <button>search</button>
+            </form>
+        </div>
+        <div class="info2">
+            <h3>save 10% on</h3>
+            <h2>europe & britian</h2>
+            <h3>if you book now</h3>
+        </div>
+    </div>
+    <section class="wrapper">
+        <h1>travelling specials</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="https://www.tripsavvy.com/thmb/736-UB-ADjkuBNvOifstdV9IDrQ=/4965x3574/filters:fill(auto,1)/DeutzerBridge_waterfront2-6c41a121b40e4c25af41288e87a107f3.jpg"
+                    alt="">
+                <h1>destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a tempore dolorum labore alias, id
+                    dolores, similique accusamus consectetur itaque suscipit doloremque ad quam! Voluptatem suscipit
+                    possimus porro voluptate impedit?</p>
+                <button>book</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn1.matadornetwork.com/blogs/1/2011/05/Munich-Germany-sunset-cityscape-destinations-1200x900.jpg"
+                    alt="">
+                <h1>destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a tempore dolorum labore alias, id
+                    dolores, similique accusamus consectetur itaque suscipit doloremque ad quam! Voluptatem suscipit
+                    possimus porro voluptate impedit?</p>
+                <button>book</button>
+            </div>
+            <div class="card">
+                <img src="https://2.bp.blogspot.com/-qH2M8X_8y3k/UJE7uwKVioI/AAAAAAABsBI/kPYJ02SSblw/s1600/29.jpg"
+                    alt="">
+                <h1>destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a tempore dolorum labore alias, id
+                    dolores, similique accusamus consectetur itaque suscipit doloremque ad quam! Voluptatem suscipit
+                    possimus porro voluptate impedit?</p>
+                <button>book</button>
+            </div>
+            <div class="card">
+                <img src="http://4.bp.blogspot.com/-8v5jXqeHwEY/UY_spiSu7MI/AAAAAAAAIH0/cKSv2y5s0gU/s1600/IMG_3523.JPG"
+                    alt="">
+                <h1>destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a tempore dolorum labore alias, id
+                    dolores, similique accusamus consectetur itaque suscipit doloremque ad quam! Voluptatem suscipit
+                    possimus porro voluptate impedit?</p>
+                <button>book</button>
+            </div>
+            <div class="card">
+                <img src="https://www.fodors.com/wp-content/uploads/2019/07/11_BeachHoneymoon__Auckland_shutterstock_743819590-768x512.jpg"
+                    alt="">
+                <h1>destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a tempore dolorum labore alias, id
+                    dolores, similique accusamus consectetur itaque suscipit doloremque ad quam! Voluptatem suscipit
+                    possimus porro voluptate impedit?</p>
+                <button>book</button>
+            </div>
+            <div class="card">
+                <img src="https://vivaexpeditions.com/assets/Uploads/page-preview-images/Awaroa-Estuary-Abel-Tasman-credit-Abel-Tasman-AquaTaxi.jpg"
+                    alt="">
+                <h1>destination</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit a tempore dolorum labore alias, id
+                    dolores, similique accusamus consectetur itaque suscipit doloremque ad quam! Voluptatem suscipit
+                    possimus porro voluptate impedit?</p>
+                <button>book</button>
+            </div>
+
+        </div>
+    </section>
+    <section class="content">
+        <div class="h">
+            <h2> <span>our</span> services</h2>
+        </div>
+
+        <div class="con">
+
+            <div class="service">
+                <div class="tip">
+                    <h2>booking tickets</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis deserunt ducimus dolore quod
+                        laboriosam nulla, praesentium consectetur aperiam cumque!</p>
+                </div>
+                <div class="tip">
+                    <h2>documents</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis deserunt ducimus dolore quod
+                        laboriosam nulla, praesentium consectetur aperiam cumque!</p>
+                </div>
+                <div class="tip">
+                    <h2>travel insurance</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis deserunt ducimus dolore quod
+                        laboriosam nulla, praesentium consectetur aperiam cumque!</p>
+                </div>
+                <div class="tip">
+                    <h2>planning tours</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis deserunt ducimus dolore quod
+                        laboriosam nulla, praesentium consectetur aperiam cumque!</p>
+                </div>
+            </div>
+            <div class="img">
+                <img src="https://live.staticflickr.com/7318/16173983157_91fe554c50_b.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="offer">
+        <div class="info">
+            <h1>see our special promo offers</h1>
+            <div class="btn"><button>get started</button></div>
+        </div>
+    </section>
+    <section class="new">
+        <div class="card1">
+            <div class="cards1">
+                <img src="https://media.cntraveler.com/photos/5653458696771ce632e46c88/master/pass/hallstatt-austria-cr-getty.jpg"
+                    alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto illum nisi esse corrupti beatae
+                    dignissimos eum assumenda, neque eaque?</h2>
+                    <button>read more</button>
+            </div>
+            <div class="cards1">
+                <img src="https://media.cntraveler.com/photos/5653458696771ce632e46c88/master/pass/hallstatt-austria-cr-getty.jpg"
+                    alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto illum nisi esse corrupti beatae
+                    dignissimos eum assumenda, neque eaque?</h2>
+                    <button>read more</button>
+            </div>
+            <div class="cards1">
+                <img src="https://media.cntraveler.com/photos/5653458696771ce632e46c88/master/pass/hallstatt-austria-cr-getty.jpg"
+                    alt="">
+                <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto illum nisi esse corrupti beatae
+                    dignissimos eum assumenda, neque eaque?</h2>
+                    <button>read more</button>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="end">
+            <h1>your next summer vacation</h1>
+            <button>contact</button>
+        </div>
+    </footer>
+</body>
+
+</html>
