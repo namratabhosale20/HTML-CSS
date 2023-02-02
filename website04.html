@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        header {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("https://www.nbn.org.il/wp-content/uploads/2014/01/officeadministration_7436215_cropped.jpg");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .logo h1 {
+
+            color: greenyellow;
+            margin: 0;
+            text-transform: capitalize;
+        }
+
+        nav {
+            padding: 2% 8%;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 2.5rem;
+
+        }
+
+        nav ul li a:hover {
+            color: red;
+            transition: .5s ease-in-out;
+        }
+
+        h1,
+        p {
+            color: white;
+        }
+
+        .content {
+            width: 50%;
+            position: relative;
+            top: 16%;
+            left: 8%;
+        }
+
+        form {
+            margin: 2.4rem 0;
+        }
+
+        input {
+            font-size: 1.8rem;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 50%;
+            padding: 12px 20px;
+            display: block;
+            border: 1px solid white;
+            margin: 1.2rem 0;
+        }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            margin: 8px 0;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        input::placeholder {
+            font-size: 1.3rem;
+            color: #ccc;
+        }
+
+        .row p {
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left,
+        .middle,
+        .right {
+            flex-basis: 30%;
+        }
+
+        .image {
+            width: 500px;
+            padding: 1.6rem;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            margin: 8px 0;
+            cursor: pointer;
+            text-transform: uppercase;
+            display: inline-block;
+            border-radius: 4px;
+        }
+
+
+
+        .about2 {
+            background-color: #222;
+            color: whitesmoke;
+        }
+
+        .a-left {
+            flex-basis: 50%;
+        }
+
+        .a-right {
+            flex-basis: 30%;
+        }
+
+        .about2 .card {
+            padding: 3rem 8rem;
+            color: #222;
+            background-color: #dcdcdc;
+            margin: 1.6rem;
+            text-align: center;
+        } 
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>fintech</h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+
+
+        </nav>
+        <div class="content">
+            <h1>Fintech provides solutions to your business <br> needs whatever they wanted</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem, totam pariatur enim ipsam
+                blanditiis quibusdam? Alias, quo similique, vel possimus nesciunt nam tenetur minima, ipsum itaque
+                veniam voluptate temporibus.</p>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Email">
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+    </header>
+    <section class="about">
+        <div class="row">
+            <div class="left">
+                <h2>fintech is all about excellence in the world of business</h2>
+                <img class="image"
+                    src="https://s.abcnews.com/images/Business/gty_employees_working_office_jt_121218_wmain.jpg" alt="">
+            </div>
+            <div class="middle">
+                <h2>our history</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit vel commodi officia nihil quam
+                    rem, provident ratione inventore aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit vel commodi officia nihil quam
+                    rem, provident ratione inventore aliquam.</p>
+                <button>read more</button>
+            </div>
+            <div class="right">
+                <h2>our history</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit vel commodi officia nihil quam
+                    rem, provident ratione inventore aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit vel commodi officia nihil quam
+                    rem, provident ratione inventore aliquam.</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </section>
+    <section class="about2">
+        <div class="row">
+            <div class="a-left">
+                <h2>what we can do for you</h2>
+                <h3>about us</h3>
+                <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati repellat tempora
+                    temporibus. Rerum tenetur aperiam magnam atque eveniet deserunt culpa perferendis in, recusandae,
+                    dolorem minus enim et, qui totam.</p>
+            </div>
+            <div class="a-right">
+
+                <div class="row">
+                    <div class="card">
+                        <h2>web app dev</h2>
+                    </div>
+
+
+                    <div class="card">
+                        <h2>database management</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <h2>andriod developement</h2>
+                    </div>
+
+                    <div class="card">
+                        <h2>ios developement</h2>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
