@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            height: 80vh;
+            width: 100%;
+            color: #fff;
+            background-image: url("http://ichef-1.bbci.co.uk/news/1024/cpsprodpb/F86B/production/_86359536_thinkstockphotos-489377142.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+           font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0 12px;
+
+        }
+
+        nav ul {
+            margin-right: 90px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav ul li {
+            margin: 12px;
+            padding: 9px;
+        }
+        nav ul li a:hover{
+          color: orangered;
+        }
+
+        nav h3 {
+            margin-left: 60px;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 120px;
+            margin-left: 60px;
+            width: 800px;
+        }
+
+        .content p {
+            padding: 12px;
+        }
+        .content ul li{
+            margin-right: 12px;
+        }
+        .content button{
+            margin-top: 30px;
+            padding: 12px 0;
+            width: 160px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 2px;
+
+        }
+        .content .btn1{
+            background-color: orangered;
+            color: #fff;
+        }
+        .content .btn2{
+            background-color: #fff;
+            color: orangered;
+        }
+        .content .btn1:hover{
+           background-color: orange;
+        }
+        .content .btn2:hover{
+             background-color: #ccc;
+        }
+        .container{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .container .content{
+            text-align: center;
+        }
+        .container .content h5{
+            color: #ccc;
+        }
+        .container .btn3{
+            background-color: #fff;
+            color: orangered;
+            border: 1px solid orangered;
+        }
+        .container .btn3:hover{
+            background-color: orangered;
+            color: #fff;
+        }
+        
+        .chef{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .chef img{
+            margin-left: 30px;
+        }
+        .chef .btn4{
+            background-color: rgb(32, 107, 82);
+            color: white;
+            text-transform: uppercase;
+        }
+        .chef .btn4:hover{
+            background-color: rgb(9, 122, 85);
+        }
+        footer{
+            height: 40vh;
+              width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: #fff;
+        }
+        footer ul{
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+            justify-content: center;
+        }
+        footer ul h3{
+           color: orangered;
+           text-transform: capitalize;
+        }
+        footer h2{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h3>
+                <i class='fa fa-coffee' style='color: white'></i> Coffee
+            </h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h2><strong>coffee time</strong> is a <br> chance to slowdown</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic dolorum corporis. Saepe, dicta
+                asperiores accusantium ut eveniet maiores culpa! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</p>
+            <ul>
+                <li><button class="btn1">book a table</button>
+                </li>
+                <li><button class="btn2">About us</button></li>
+            </ul>
+        </div>
+    </header>
+    <section class="container">
+        <div class="content">
+            <h5>our skills</h5>
+            <h2>we make the delicious coffee for <br> the coffee lovers.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tenetur ducimus hic neque doloribus, molestias reiciendis quae quo rerum iusto, earum sunt nisi assumenda, enim sapiente numquam ut reprehenderit laudantium!</p>
+            <button class="btn3">know more</button>
+        </div>
+        <div class="img">
+            <img src="https://i.pinimg.com/originals/42/b0/f3/42b0f39e95dccb886a1001390d4d5788.jpg"width="500px" alt="">
+        </div>
+    </section>
+    <section class="chef">
+        <div class="img1">
+            <img src="https://thumbs.dreamstime.com/b/chef-welcome-20077030.jpg" width="500px" alt="">
+        </div>
+        <div class="content">
+            <h5>our skills</h5>
+            <h2>we make the delicious coffee for <br> the coffee lovers.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tenetur ducimus hic neque doloribus, molestias reiciendis quae quo rerum iusto, earum sunt nisi assumenda, enim sapiente numquam ut reprehenderit laudantium!</p>
+            <button class="btn4">know more</button>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><h2>contact</h2></li>
+            <li><h3>phone</h3></li>
+            <li><p>+919900487564</p></li>
+            <li><h3>mail</h3></li>
+            <li><p>coffee@gmail.com</p></li>
+            <li><h3>addresse</h3></li>
+            <li><p>shrirampur</p></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
