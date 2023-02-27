@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        header{
+         
+        height: 70px;
+          border: 1px solid black;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+          padding-top: 20px;
+          margin-right: 5em;
+        
+        }
+        nav ul li{
+            margin-right: 2rem;
+            
+        }
+        nav ul li a{
+           text-transform: uppercase;
+           color: black;
+        }
+        nav h1{
+           margin-left: 5em;
+           padding-top: 20px;
+           font-size: 28px;
+           font-weight: bolder;
+        }
+        .content{
+            height: 90vh;
+            width:100%;
+            background-image: url("https://bloggfort.no/wp-content/uploads/2015/06/IMG_2042.jpg");
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://bloggfort.no/wp-content/uploads/2015/06/IMG_2042.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+         
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .info{
+            width: 30%;
+            color: white;
+           margin-left: 20%;
+        }
+        .info h1{
+            font-size: 46px;
+            margin-bottom: 0.4em;
+            text-transform: capitalize;
+      
+        }
+       .form {
+            width: 30%;
+          height: 60%;
+            background-color: white;
+            margin-right: 9em;
+            border-radius: 2px;
+       }
+       form{
+           padding: 2em;
+       }
+       .form h1{
+           text-align: center;
+           margin-top: 12px;
+           text-transform: capitalize;
+
+        
+       }
+      input[type="text"]
+      {
+          display: block;
+          width: 90%;
+          margin-bottom: 12px;
+         padding: 10px;
+         margin-top: 6px;
+         background-color: gainsboro;
+         border: none;
+         border-radius: 5px;
+
+      }
+      .form form label{
+          text-transform: capitalize;
+      }
+    .form form button{
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        background-color: rgb(22, 19, 19);
+        color: white;
+        border-radius: 5px;
+    }
+    .cards{
+        height: 75%;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+       
+    }
+    .cards .cards1{
+       
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(250px ,3fr));
+        grid-gap: 30px;
+       
+      
+        
+    }
+    .cards1 img{
+        width: 100%;
+        border-radius: 5px;
+    }
+      .cards h1{
+          text-align: center;
+          margin-bottom: 30px;
+          text-transform: capitalize;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>kesari tours</h1>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">places</a></li>
+                <li><a href="">gallery</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="info">
+            <h1>open salford in <br> its full beauty</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure nam explicabo necessitatibus ullam at, neque alias dicta tempore quo?</p>
+        </div>
+        <div class="form">
+            <h1>salford for everyone</h1>
+            <form action="">
+                <label for="name">your full name</label>
+                <input type="text">
+                <label for="email">email</label>
+                <input type="text">
+                <label for="contact">contact</label>
+                <input type="text">
+                <button>book now</button>
+            </form>
+        </div>
+    </section>
+    <section class="cards">
+        <h1>salford is always different</h1>
+        <div class="cards1">
+            <div class="card">
+                <img src="https://andyporterimages.com/wp-content/uploads/2015/01/Daffodils_at_Sunrise-2.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/95/10/5e/95105e4fc4536195c9663172797433af.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="https://frippislandresort.com/wp-content/uploads/2020/06/September-Parker-Shoaf-2.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="https://photos.zillowstatic.com/cc_ft_576/ISne97aulur4kj1000000000.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="http://3.bp.blogspot.com/-sYoHfA5nfno/TmPlArauSjI/AAAAAAAACeA/Uit7LkaOFkc/s1600/Winding_Stream_Banff_National_Park_Alberta_Canada.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="https://andyporterimages.com/wp-content/uploads/2015/01/Daffodils_at_Sunrise-2.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="https://andyporterimages.com/wp-content/uploads/2015/01/Daffodils_at_Sunrise-2.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+            <div class="card">
+                <img src="https://andyporterimages.com/wp-content/uploads/2015/01/Daffodils_at_Sunrise-2.jpg" alt="">
+                <h1>salford old town</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo totam et, obcaecati, ullam ab iste, distinctio magnam voluptates blanditiis repellat aliquid maiores eligendi dignissimos ut? Perspiciatis asperiores ut similique provident.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
